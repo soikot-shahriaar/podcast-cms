@@ -124,7 +124,7 @@ podcast-cms/
 #### **1. Download and Extract**
 ```bash
 # Clone or download the project
-git clone [repository-url]
+git clone https://github.com/soikot-shahriaar/podcast-cms
 cd podcast-cms
 ```
 
