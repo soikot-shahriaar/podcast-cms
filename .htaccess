@@ -1,0 +1,28 @@
+# Simple .htaccess for Podcast CMS
+
+# Enable URL rewriting
+RewriteEngine On
+
+# Set the base directory (automatically detected)
+# If project is in a subdirectory, RewriteBase will be set automatically
+RewriteBase /
+
+# Allow access to all files by default
+Order allow,deny
+Allow from all
+
+# Basic security - prevent access to sensitive files
+<Files "*.sql">
+    Deny from all
+</Files>
+
+<Files ".htaccess">
+    Deny from all
+</Files>
+
+# Set default index file
+DirectoryIndex index.php
+
+# Enable PHP
+AddType application/x-httpd-php .php
+
